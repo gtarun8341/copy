@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#ffd549, #ffd901);
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 2rem 2rem;
+}
+
+header img {
+  height: 85px;
+}
+
+header button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #000000;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #0000002c;
+}
+
+main {
+  background-color: #00000093;
+  color: white;
+  max-width: 750px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #0000002c;
+  padding: 2rem 2rem;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.main-p p {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+  max-width: 85%;
+  margin: auto;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#fff, #e6e6e6);
+  color: #000000;
+  max-width: fit-content;
+  margin: 2rem auto;
+  font-family: "Orbitron", sans-serif;
+}
+
+.day-section,
+.hour-section,
+.minutes-section,
+.seconds-section {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.day-section p,
+.hour-section p,
+.minutes-section p,
+.seconds-section p {
+  font-size: 1rem;
+}
+
+.day,
+.hour,
+.minutes,
+.seconds {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.line {
+  height: 45px;
+  width: 1px;
+  background-color: #00000091;
+}
+
+.progress {
+  width: 100%;
+}
+
+.pro-text {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 1em;
+  font-weight: 500;
+}
+
+.progress-container {
+  width: 80%;
+  background-color: #2d2f31;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 3px 3px -5px #000, 0 2px 5px #000;
+  margin: auto;
+}
+
+.progress-bar {
+  height: 30px;
+  width: 40%;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 25px;
+  transition: width 0.4s ease;
+  font-size: 0.7rem;
+}
+
+.button {
+  margin: auto;
+  width: 80%;
+}
+
+main button {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 3px 3px -5px #000, 0 2px 5px #000;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+footer p {
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: rem 4rem 2rem 2rem;
+  }
+
+  header img {
+    height: 60px;
+  }
+
+  header button {
+    font-size: 0.8rem;
+  }
+
+  main {
+    margin: 0 2rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-p p {
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+    max-width: 90%;
+  }
+
+  #timer {
+    margin: 2rem 1rem;
+  }
+
+  .day-section,
+  .hour-section,
+  .minutes-section,
+  .seconds-section {
+    padding: 1rem 1rem;
+  }
+
+  .day-section p,
+  .hour-section p,
+  .minutes-section p,
+  .seconds-section p {
+    font-size: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .day,
+  .hour,
+  .minutes,
+  .seconds {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .line {
+    height: 25px;
+    width: 1px;
+    background-color: #00000091;
+  }
+
+  .pro-text {
+    font-size: 0.7rem;
+  }
+
+  .progress-container {
+    width: 100%;
+  }
+
+  .button {
+    margin: auto;
+    width: 100%;
+  }
+
+  main button {
+    font-size: 0.7rem;
+    margin: 1.2rem auto;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
